@@ -5,7 +5,6 @@ body{
   font: 12px/1 Arial,Helvetica,Tahoma,sans-serif;
 }
 .bg-sidebar{
- 
    color: white;
 }
 .navbar {
@@ -20,9 +19,13 @@ body{
 }
 .home-section {
   min-height: 600px;
+  min-width: 100%;
 }
 .premium-jobs-wrap{
   background: #4f50502f;
+}
+.brand-logo{
+  height: 40px;
 }
 #home-section {
   position: relative;
@@ -30,7 +33,6 @@ body{
   background: #094962;
   position: relative;
   height: 350px;
-  width: 100%;
 }
 #home-section:before {
   content: '';
@@ -104,7 +106,19 @@ a {
 .img-banner{
   width: 374px;
 }
-.urgent-job-box {
-  background: rgba(51, 51, 51, 0.253);
-  height: 100%;
+.team-item{
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.team-item img {
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+#about {
+  background: url('../img/banner 3.png');
+  background-repeat: repeat;
+  background-size: cover;
+  min-height: auto;
+  min-width: 100%;
 }
