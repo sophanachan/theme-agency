@@ -7,11 +7,12 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="plugin/line-awesome-1.3.0/css/line-awesome.min.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="plugin/fontawesome-5.12.1/css/all.min.css">
+        
         
         <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="plugin/bootstrap-4.4.1/css/bootstrap.min.css">
         <title>Agency Theme</title>
     </head>
     <bady data-spy="scroll" data-target="#main-nav">
@@ -36,13 +37,13 @@
                             <a href="#" class="nav-link "><i class="fas fa-money-bill-alt"></i> Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link "><i class="fa fa-bullhorn" aria-hidden="true"></i> Job</a>
+                            <a href="#" class="nav-link "><i class="fa fa-bullhorn"></i> Job</a>
                         </li>
                         <li class="nav-item mb-2">
-                            <button class="btn btn-sm btn-outline-light text-white"> Sign In</button>
+                            <button class="btn btn-sm btn-outline-light"> Sign In</button>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-sm btn-warning text-white"><i class="far fa-newspaper"></i> Post New Job</button>
+                            <button class="btn btn-sm btn-warning"><i class="far fa-newspaper"></i> Post New Job</button>
                         </li>
                         
                     </ul>
@@ -50,11 +51,11 @@
             </div>
         </nav>
         <header class="home-section" >
-            <div id="home-section">
+            <div id="home-section" class="bg-section">
                 <div class="home-inner container">
                     <div class="row">
-                        <div class="col-lg-6 d-none d-lg-block">
-                            <h3 class="display-4 text-white"> <strong>Find the job that you deserve</strong> </h3>
+                        <div class="col-lg-6">
+                            <h3 id="header-findjob"> <strong>Find the job that you deserve</strong> </h3>
                             <div class="d-flex">
                                 <div class="align-seft-start text-white">
                                     More than 3000+ trusted live jobs available from 500+ different employer, and agents on this website to the take your career next level.
@@ -66,45 +67,43 @@
                                 </div>
                             </div>
                             <div class="d-flex ">
-                                <div class="align-seft-start">
+                                <div class="align-seft-start " id="bank-pay">
                                     <img src="img/visa.png" height="50px" alt="">
                                     <img src="img/master.png" height="50px" alt="">
+                                    <img src="img/paypal.png" height="50px" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="card bg-white text-center card-form">
+                            <div class="card bg-white text-center ">
                                 <div class="card-body">
                                     <h3 class="text-dark">Create Your Free Account</h3>
-                                    <div class="mb-3">
-                                        <button class="btn btn-linkedin">
-                                            <span class="fab fa-linkedin-in"> </span> Linkedin
-                                        </button>
-                                        <button class="btn btn-facebook">
-                                            <span class="fab fa-facebook-f"> </span> Facebook
-                                        </button>
-                                        <button class="btn btn-google">
-                                            <span class="fab fa-google"> </span> Google
-                                        </button>
-                                        <div class='hr'>
-                                            <span class='hr-title'>Or</span>
-                                        </div>
+                                    <button type="button" class="btn btn-linkedin">
+                                        <span class="fab fa-linkedin-in"> </span> Linkedin
+                                    </button>
+                                    <button class="btn btn-facebook">
+                                        <span class="fab fa-facebook-f"> </span> Facebook
+                                    </button>
+                                    <button class="btn btn-google">
+                                        <span class="fab fa-google"> </span> Google
+                                    </button>
+                                    <div class='hr'>
+                                        <span class='hr-title'>Or</span>
                                     </div>
-                                    
                                     <form action="" method="post">
-                                        <div class="input-group mb-3">
+                                        <div class="form-group input-group">
                                             <div class="input-group-prepend">
-                                                <span class="input-group-text bg-primary text-white"><i class="fas fa-envelope"></i></span>
+                                                <span class="input-group-text text-white bg-primary" ><i class="las la-envelope"></i></span>
                                                 </div>
                                             <input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address">
                                         </div>
-                                        <div class="input-group mb-3">
+                                        <div class="form-group input-group">
                                             <div class="input-group-prepend">
-                                                <span class="input-group-text bg-primary text-white"><i class="fas fa-envelope"></i></span>
+                                                <span class="input-group-text bg-primary text-white"><i class="las la-lock"></i></span>
                                                 </div>
                                             <input type="password" class="form-control" placeholder="Password" aria-label="Password">
                                         </div>
-                                        <div class="input-group mb-3">
+                                        <div class="form-group input-group mb-3">
                                             <button type="submit" class="form-control btn btn-warning">Create Account</button>
                                         </div>
                                     </form>
@@ -125,33 +124,34 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 ">
-                        <form action="" method="post">
-                            <h2 for="">I'm looking for...</h2> 
-                            <div class="input-group my-group " id="search"> 
-                                <select id="lunch" class="selectpicker form-control" data-live-search="true" title="Please select a lunch ...">
-                                    <option>Phnom Penh</option>
-                                    <option>Prey Veng</option>
-                                </select> 
-                                <input type="text" class="form-control" name="snpid" placeholder="Job title, keywords or company name"/>
-                                
-                                <div class="input-group-append">
-                                    <button class="btn btn-success" type="button" id="button-addon2">Search</button>
-                                </div>
-                            </div>      
-                        </form>
-                        <div class="text-muted mt-4">
-                            <strong class="mr-2 mt-4"><span>Popular Search:</span></strong> 
-                            <span class="mr-2 mt-4"><a href="" class="search-link">Full Time</a></span> |
-                            <span class="mr-2 mt-4"><a href="" class="search-link">Part Time</a></span> |
-                            <span class="mr-2 mt-4"><a href="" class="search-link">Internship</a></span> |
-                            <span class="mr-2 mt-4"><a href="" class="search-link">Urgent Jobs</a></span> |
-                            <span class="mr-2 mt-4"><a href="" class="search-link">New Jobs</a></span> |
-                            <span class="mr-2 mt-4"><a href="" class="search-link">Management Jobs</a></span> |
-                            <span class="mr-2 mt-4"><a href="" class="search-link">NGO</a></span> |
-                            <span class="mr-2 mt-4"><a href="" class="search-link">Fresh Graduates</a></span> |
-                            <span class="mr-2 mt-4"><a href="" class="search-link">中文招聘专区</a></span> |
-                            <span class="mr-2 mt-4"><a href="" class="search-link">More></a> </span> 
-                            
+                        <div class="form-search">
+                            <form action="" method="post">
+                                <h3 >I'm looking for...</h3> 
+                                <div class="input-group my-group " id="search"> 
+                                    <select id="lunch" class="selectpicker" data-live-search="true" title="Please select a Location ...">
+                                        <option>Phnom Penh</option>
+                                        <option>Prey Veng</option>
+                                    </select> 
+                                    <input type="text" class="form-control" name="snpid" id="job-search" placeholder="Job title, keywords or company name"/>
+                                    
+                                    <div class="input-group-append">
+                                        <button class="btn btn-warning" type="button" id="button-addon2">Search</button>
+                                    </div>
+                                </div>      
+                            </form>
+                        </div>
+                        <div class="search-hot">
+                           <span>Popular Search:</span>
+                             <span><a href="" class="search-link">Full Time</a></span> 
+                             <span><a href="" class="search-link">Part Time</a></span> 
+                             <span><a href="" class="search-link">Internship</a></span> 
+                             <span><a href="" class="search-link">Urgent Jobs</a></span> 
+                             <span><a href="" class="search-link">New Jobs</a></span> 
+                             <span><a href="" class="search-link">Management Jobs</a></span> 
+                             <span><a href="" class="search-link">NGO</a></span> 
+                             <span><a href="" class="search-link">Fresh Graduates</a></span>   
+                             <span><a href="" class="search-link">中文招聘专区</a></span> 
+                             <span><a href="" class="search-link">More></a></span> 
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -305,9 +305,9 @@
                         <div class="premium-job-box p-3 bg-white box-shadow">
                             <div class="row">
                                 <div class="col-md-4 col-sm-6">
-                                    <div class="c"><a
-                                            href="https://demo.themeqx.com/jobfair/public/employer/google/jobs"><img
-                                                src="https://demo.themeqx.com/jobfair/public/storage/uploads/images/logos/15443818091odcq-google.png"
+                                    <div class="premium-job-logo"><a
+                                            href="https://demo.themeqx.com/jobfair/public/employer/google/jobs">
+                                            <img src="https://demo.themeqx.com/jobfair/public/storage/uploads/images/logos/15443818091odcq-google.png"
                                                 class="img-fluid"></a></div>
                                 </div>
                                 <div class="col-md-8 col-sm-6">
