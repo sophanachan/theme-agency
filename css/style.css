@@ -28,13 +28,15 @@
     --secondary-color:      #f1c111;
     --warning-color:        #eff32c;
     --linkeding-color:      #0376b5;
-    --facebook-color:       #3d589b;
+    --facebook-color:       #2d4072;
     --google-color:         #da4c3e;
     --white-color:          #ffffff;
     --dark-color:           #171819;
     --project-bg:           #f0f8ff;
-    --bg-premium-jobs:      #d3d3d3;
+    --bg-premium-jobs:      #f8fafc;
     --menu-bg:              #094962;
+    --bg-primary:           #33aacc;
+    --bg-primary-helf:      #ebf4f7;
 
     --title-color:          #15141a;
     --gray-color:           #909090;
@@ -88,6 +90,7 @@
     font-size: var(--h3-font-size);
     font-weight: 100;
     margin-bottom: 50;
+    color: var(--menu-bg);
   }
 
   h4 {
@@ -119,32 +122,6 @@
     letter-spacing: 0;
     color: var(--white-color);
   }
-  /*  BLOCKQUOTES */
-  .quote {
-    position: relative;
-    margin: 0;
-  }
-
-  .quote::after {
-    content: "“";
-    position: absolute;
-    bottom: -80px;
-    left: 20px;
-    font-family: times;
-    color: var(--gray-color);
-    font-weight: var(--font-weight-bold);
-    font-size: 14em;
-    line-height: 0;
-    opacity: 0.10;
-  }
-
-  blockquote {
-    border-left: 5px solid rgba(0,0,0,0.05);
-    display: block;
-    margin: 42px 0;
-    padding: 14px 22px;
-    color: rgba(0,0,0,0.5);
-  }
   button.btn-warning{
     background: var(--secondary-color);
   }
@@ -168,6 +145,7 @@
   img.brand-logo{
     height: 60px;
   }
+  /* End Header or Menu */
   /* Find The Job */
   .home-section {
     padding-top: 90px;
@@ -189,7 +167,7 @@
     margin-top: 100px;
   }
   #bank-pay{
-    margin-top:  100px;
+    margin-top:  30px;
     padding-bottom: 15px;
   }
   .d-flex .align-seft-start img{
@@ -198,7 +176,7 @@
   .d-flex .align-seft-start button{
     font-size: 12px;
     width: 250px;
-    margin-top: 16px;
+    margin-top: 10px;
   }
   .d-flex .align-seft-start p{
     font-family: var(--base-font-family);
@@ -233,39 +211,46 @@
     position: relative;
     outline: 0;
     border: 0;
-    color: var(--title-color);
+    color: black;
     text-align: center;
     height: 1.5em;
     opacity: .5;
-   
   }
-  .hr-text:before {
-    content: '';
-    /* // use the linear-gradient for the fading effect
-    // use a solid background color for a solid bar */
-    background: linear-gradient(to right, transparent, var(--gray-color), transparent);
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    height: 1px;
+    .hr-text:before {
+      content: '';
+      background: linear-gradient(to right, transparent, #818078, transparent);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+    }
+    .hr-text:after {
+      content: attr(data-content);
+      position: relative;
+      display: inline-block;
+      color: black;
+  
+      padding: 0 .5em;
+      line-height: 1.5em;
+      color: #818078;
+      background-color: #fcfcfa;
   }
-  .hr-text:after {
-    content: attr(data-content);
-    position: relative;
-    display: inline-block;
-    color: var(--title-color);
-
-    padding: 0 .5em;
-    line-height: 1.5em;
-    /* // this is really the only tricky part, you need to specify the background color of the container element... */
-    color: var(--gray-color);
-    background-color: var(--white-color);
+  input.bg-input{
+    background: var(--bg-primary-helf);
   }
- #bg-primary{
-    background: #2facc8;
+  span.bg-input-i{
+    background: var(--bg-primary);
   }
+  p small{
+    font-size: var(--span-font-size);
+  }
+    /* Find The Job */
   /* Search Job */
+  .search-head-section {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
   .form-search{
     padding-top: 24px;
   }
@@ -305,7 +290,7 @@
   .search-hot span{
     color: var(--span-color) ;
     font-family: var(--title-font-family);
-
+    margin-top: 10px;
   }
   a.category-link {
     color: var(--search-link-color);
@@ -314,7 +299,8 @@
     color: var(--search-link-color);
     padding: 3px;
   }
-/* Premium Job */
+  /* End Search Job */
+  /* Start Premium Job */
   .premium-jobs-wrap{
     background: var(--bg-premium-jobs);
     padding-top: 15px;
@@ -323,6 +309,7 @@
   .premium-job-box {
     height: 100%;
     border-radius: 5px;
+    padding: 5px;
   }
   .premium-job-logo {
     text-align: center;
@@ -341,8 +328,14 @@
     margin-bottom: 1rem;
   }
   p a {
-    color: #38c172;
     font-size: var(--p-font-size);
+  }
+  p label{
+    align-items: right;
+    margin-left: 50px;
+    background: var(--warning-color);
+    padding-right: 15px;
+    padding-left: 15px;
   }
   p.company {
     font-size: var(--span-font-size);
@@ -355,15 +348,37 @@
   .img-banner{
     width: 350px;
   }
-  .team-item{
-    background-color: var(--white-color);
-    text-align: center;
+  /* End Premium Job */
+  /* Start Urgent Job */
+  .urgent-jobs-wrap{
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
-  .team-item img {
-    width: 100%;
-    overflow: hidden;
-    transition: all 0.5s;
+  .urgent-job-box{
+    height: 100%;
+    margin-bottom: 16px;
   }
+  .urgent-job-box h3{
+    font-size: var(--title-font-family);
+  }
+  .urgent-job-box h3 a{
+    font-size: var(--title-font-family);
+    color: var(--menu-bg);
+  }
+  .urgent-job-box h3 span{
+    font-size: var(--title-font-family);
+    position: absolute;
+    align-items: right;
+    padding-left: 15px;
+    color: var(--warning-color);
+  }
+  .urgent-job-box p{
+    font-size: var(--title-font-family);
+  }
+  /* End Urgent Job */
+  /* Featured Employer */
+
+  /* Featured Employer */
   #about {
     background: url('../img/banner 3.png');
     background-repeat: repeat;
@@ -415,7 +430,6 @@
     .navbar-expand-lg .navbar-nav .nav-link.contact {
       margin: 1em 0;
     }
-
     .copyright-text, 
     .footer-link, 
     .site-footer .social-icon {
