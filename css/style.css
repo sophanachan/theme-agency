@@ -269,14 +269,16 @@
     width: 125px;
   }
   #lunch{
-    font-size: 16px;
+    width: 120px;
+    font-size: 14px;
     border: none;
     color: var(--gray-color);
     font-family: var(--base-font-family);
+    background: var(--white-color);
     padding: 10px;
   }
   #lunch option{
-    font-size: 16px;
+    font-size: 14px;
     border: none;
     color: var(--dark-color);
     font-family: var(--base-font-family);
@@ -290,6 +292,8 @@
   }
   #job-search{
     border: none;
+    color: var(--gray-color);
+    font-family: var(--base-font-family);
   }
   .search-hot{
     margin-top: 25px;
@@ -387,6 +391,7 @@
   }
   
   .featured-employer-wrap .w-custom{
+    display: block;
     width: 90px;
     height: 60px;
     border-style: solid;
@@ -401,8 +406,10 @@
     margin-bottom: 16px;
   }
   .recruitment-agencies-wrap .w-custom{
+    display: block;
     width: 90px;
     height: 60px;
+    border-image-width: auto;    
   }
   /* Recruitment Agencies */
   /* Career Resource*/
@@ -419,6 +426,7 @@
    /* Career Resource*/
    /* Cooperation Partner */
   .cooperation-partner {
+    display: block;
     background: url('../img/about.png');
     background-repeat: repeat;
     background-size: cover;
@@ -514,6 +522,7 @@
       width: 100%;
     }
     .featured-employer-wrap .w-custom{
+      display: block;
       width: 75px;
       height: 45px;
       border-style: solid;
@@ -531,6 +540,7 @@
       padding-top: 16px;
     }
     .cooperation-partner .w-custom{
+      display: block;
       width: 75px;
       height: 45px;
       border-style: solid;
@@ -589,6 +599,7 @@
       font-size: 12px;
     }
     .featured-employer-wrap .w-custom{
+      display: block;
       width: 75px;
       height: 45px;
       border-style: solid;
@@ -597,6 +608,7 @@
       border-radius: 5px;
     }
     .cooperation-partner {
+      display: block;
       background: url('../img/about.png');
       background-repeat: repeat;
       background-size: cover;
@@ -661,6 +673,7 @@
       font-size: 12px;
     }
     .featured-employer-wrap .w-custom{
+      display: block;
       width: 75px;
       height: 45px;
       border-style: solid;
@@ -669,6 +682,7 @@
       border-radius: 5px;
     }
     .cooperation-partner {
+      display: block;
       background: url('../img/about.png');
       background-repeat: repeat;
       background-size: cover;
