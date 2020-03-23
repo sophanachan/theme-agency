@@ -53,6 +53,7 @@
     --h1-font-size:         42px;
     --h2-font-size:         32px;
     --h3-font-size:         24px;
+    --h5-font-size:         14px;
     --p-font-size:          14px;
     --span-font-size:       12px;
     --min-span-font-size:   12px;
@@ -99,6 +100,12 @@
     font-size: var(--p-font-size);
     letter-spacing: 1px;
     text-transform: uppercase;
+  }
+  
+  h5 {
+    color: var(--menu-bg);
+    font-family: var(--font-bold-family);
+    font-size: var(--h5-font-size);
   }
 
   p {
@@ -245,7 +252,7 @@
   p small{
     font-size: var(--span-font-size);
   }
-    /* Find The Job */
+  /* Find The Job */
   /* Search Job */
   .search-head-section {
     margin-top: 25px;
@@ -319,10 +326,6 @@
     box-shadow: 0 1px 2px rgba(0,0,0,.35);
     padding: 8px;
   }
-  .img-fluid, .img-thumbnail {
-    max-width: 100%;
-    height: 66px;
-  }
   p {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -369,7 +372,7 @@
     font-size: var(--title-font-family);
     position: absolute;
     align-items: right;
-    padding-left: 15px;
+    padding-left: 60px;
     color: var(--warning-color);
   }
   .urgent-job-box p{
@@ -377,15 +380,62 @@
   }
   /* End Urgent Job */
   /* Featured Employer */
-
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+  .featured-employer-wrap .w-custom{
+    width: 90px;
+    height: 60px;
+    border-style: solid;
+    border-color: #36445241;
+    border-width: 1px;
+    border-radius: 5px;
+  }
   /* Featured Employer */
-  #about {
-    background: url('../img/banner 3.png');
+  /* Recruitment Agencies */
+  .recruitment-agencies-wrap{
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .recruitment-agencies-wrap .w-custom{
+    width: 90px;
+    height: 60px;
+  }
+  /* Recruitment Agencies */
+  /* Career Resource*/
+  .career-resource-wrap{
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .career-resource-wrap .card-img-top{
+    width: 350px;
+    height: 200px;
+    
+  }
+  
+   /* Career Resource*/
+   /* Cooperation Partner */
+  .cooperation-partner {
+    background: url('../img/about.png');
     background-repeat: repeat;
     background-size: cover;
-    min-height: auto;
+    background-position: center;
+    min-height: 600px;
     min-width: 100%;
+    padding-top: 16px;
   }
+  .cooperation-partner .w-custom{
+    width: 120px;
+    height: 70px;
+    border-style: solid;
+    border-color: #36445241;
+    border-width: 1px;
+    border-radius: 5px;
+  }
+  /* Cooperation Partner */
 /*---------------------------------------
      RESPONSIVE STYLES              
   -----------------------------------------*/
@@ -460,7 +510,34 @@
     .site-footer .social-icon {
       margin-top: 1em;
     }
-
+    .img-banner{
+      width: 100%;
+    }
+    .featured-employer-wrap .w-custom{
+      width: 75px;
+      height: 45px;
+      border-style: solid;
+      border-color: #36445241;
+      border-width: 1px;
+      border-radius: 5px;
+    }
+    .cooperation-partner {
+      background: url('../img/about.png');
+      background-repeat: repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: 400px;
+      min-width: 100%;
+      padding-top: 16px;
+    }
+    .cooperation-partner .w-custom{
+      width: 75px;
+      height: 45px;
+      border-style: solid;
+      border-color: #36445241;
+      border-width: 1px;
+      border-radius: 5px;
+    }
     .copyright-text {
       margin: 2.5em 0 1em 0;
     }
@@ -510,6 +587,23 @@
     button.btn.btn-google{
       font-family: var(--title-font-family);
       font-size: 12px;
+    }
+    .featured-employer-wrap .w-custom{
+      width: 75px;
+      height: 45px;
+      border-style: solid;
+      border-color: #36445241;
+      border-width: 1px;
+      border-radius: 5px;
+    }
+    .cooperation-partner {
+      background: url('../img/about.png');
+      background-repeat: repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: 260px;
+      min-width: 100%;
+      padding-top: 16px;
     }
     .footer-link, 
     .site-footer .social-icon {
@@ -565,6 +659,23 @@
     button.btn.btn-google{
       font-family: var(--title-font-family);
       font-size: 12px;
+    }
+    .featured-employer-wrap .w-custom{
+      width: 75px;
+      height: 45px;
+      border-style: solid;
+      border-color: #36445241;
+      border-width: 1px;
+      border-radius: 5px;
+    }
+    .cooperation-partner {
+      background: url('../img/about.png');
+      background-repeat: repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: 260px;
+      min-width: 100%;
+      padding-top: 16px;
     }
     .footer-link, 
     .site-footer .social-icon {
